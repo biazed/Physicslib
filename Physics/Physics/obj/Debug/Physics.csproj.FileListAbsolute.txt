@@ -1,0 +1,5 @@
+c:\users\biazed\documents\visual studio 2010\Projects\Physics\Physics\obj\Debug\ResolveAssemblyReference.cache
+c:\users\biazed\documents\visual studio 2010\Projects\Physics\Physics\bin\Debug\Physics.dll
+c:\users\biazed\documents\visual studio 2010\Projects\Physics\Physics\bin\Debug\Physics.pdb
+c:\users\biazed\documents\visual studio 2010\Projects\Physics\Physics\obj\Debug\Physics.dll
+c:\users\biazed\documents\visual studio 2010\Projects\Physics\Physics\obj\Debug\Physics.pdb
