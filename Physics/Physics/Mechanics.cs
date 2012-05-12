@@ -13,47 +13,48 @@ namespace Physics
         public const int lightSpeed = 300000; // km/s
     }
 
+
     public class Mechanics
     {
 
         
-
-        public double velocity(int displacement, int time)
+        //Calculate velocity from displacement and time
+        public double velocity(double displacement, double time)
         {
             return displacement / time;
         }
-
-        public double avVelocity(int distChange, int timeChange)
+        //Calculate average velocity from distance change and time change
+        public double avVelocity(double distChange, double timeChange)
         {
             return distChange / timeChange;
         }
-
-        public double acceleration(int chanVelocity, int time)
+        //Calculate acceleration from velocity change and time
+        public double acceleration(double chanVelocity, double time)
         {
             return chanVelocity / time;
         }
-
-        public double linearAcceleration(int iniSpeed, int speed)
+        //Calculate linear acceleration from initial speed and end speed
+        public double linearAcceleration(double iniSpeed, double speed)
         {
             return (iniSpeed + speed) / 2;
         }
-
-        public double freeFall(int iniSpeed, int time)
+        //Calculate fall speed from initial speed upwards and time
+        public double freeFall(double iniSpeed, double time)
         {
             return iniSpeed - Constants.gravity * time;
         }
-
-        public double Weight(int mass)
+        //Calculate weight from mass (based on Newton II)
+        public double Weight(double mass)
         {
             return mass * Constants.gravity;
         }
-
-        public double InclineAngleWeight(int mass, int angle)
+        //Calculate weight of an object in incline angle
+        public double InclineAngleWeight(double mass, double angle)
         {
             return mass * Constants.gravity * Math.Sin(angle);
         }
-
-        public double potentialEnergy(int mass, int height)
+        //Calculate potential energy from mass and height
+        public double potentialEnergy(double mass, double height)
         {
             return mass * Constants.gravity * height;
         }
@@ -62,20 +63,20 @@ namespace Physics
          *      Newton II
          *       F = ma       
          */
-        public double Force(int mass, int acceleration)
+        public double Force(double mass, double acceleration)
         {
             return mass * acceleration;
         }
 
         //E = 1/2mv^2
-        public double kineticEnergy(int mass, int velocity)
+        public double kineticEnergy(double mass, double velocity)
         {
             return mass / 2 * velocity * velocity;
         }
         
 
         //(2v * Sin a) / g
-        public double Hangtime(int speed, int angle)
+        public double Hangtime(double speed, double angle)
         {
             double result = -1;
             result = 2 * speed * Math.Sin(angle);
@@ -83,7 +84,7 @@ namespace Physics
             return result;
         }
         //(v^2*Sin 2a) / g
-        public double Range(int speed, int angle)
+        public double Range(double speed, double angle)
         {
             double result = -1;
 
