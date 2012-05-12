@@ -8,3 +8,8 @@ C:\Users\Biazed\Desktop\github\Physics\Physics\bin\Debug\Physics.pdb
 C:\Users\Biazed\Desktop\github\Physics\Physics\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Biazed\Desktop\github\Physics\Physics\obj\Debug\Physics.dll
 C:\Users\Biazed\Desktop\github\Physics\Physics\obj\Debug\Physics.pdb
+C:\Users\Biazed\Desktop\github\Physicslib\Physics\Physics\bin\Debug\Physics.dll
+C:\Users\Biazed\Desktop\github\Physicslib\Physics\Physics\bin\Debug\Physics.pdb
+C:\Users\Biazed\Desktop\github\Physicslib\Physics\Physics\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Biazed\Desktop\github\Physicslib\Physics\Physics\obj\Debug\Physics.dll
+C:\Users\Biazed\Desktop\github\Physicslib\Physics\Physics\obj\Debug\Physics.pdb
