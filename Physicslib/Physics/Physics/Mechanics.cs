@@ -10,7 +10,7 @@ namespace Physics
     {
         public const double gravity = 9.81;
         public const double Pi = 3.14159265359;
-        public const int lightSpeed = 300000; // km/s
+        public const int lightSpeed = 300000; // km/s = 5 000 000 m/s
     }
 
 
@@ -51,6 +51,7 @@ namespace Physics
         //Calculate weight of an object in incline angle
         public double InclineAngleWeight(double mass, double angle)
         {
+            angle = angle * (Constants.Pi / 180);
             return mass * Constants.gravity * Math.Sin(angle);
         }
         //Calculate potential energy from mass and height
@@ -78,7 +79,8 @@ namespace Physics
         //(2v * Sin a) / g
         public double Hangtime(double speed, double angle)
         {
-            double result = -1;
+            double result;// = -1;
+            angle = angle * (Constants.Pi / 180);
             result = 2 * speed * Math.Sin(angle);
             result = result / Constants.gravity;
             return result;
@@ -87,7 +89,7 @@ namespace Physics
         public double Range(double speed, double angle)
         {
             double result = -1;
-
+            angle = angle * (Constants.Pi / 180);
             result = speed * speed * Math.Sin(2 * angle);
             result = result / Constants.gravity;
 
